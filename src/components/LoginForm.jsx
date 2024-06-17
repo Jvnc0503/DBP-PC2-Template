@@ -20,6 +20,7 @@ const LoginForm = () =>{
 
     return(
         <form onSubmit={handleSubmit}>
+            <div>Login</div>
             <label htmlFor='email'>Email:
                 <input
                     type='email'
@@ -37,6 +38,8 @@ const LoginForm = () =>{
                     required
                 />
             </label>
+            <br/>
+            <button type="submit" onClick={handleSubmit}>Submit</button>
         </form>
     );
 }
